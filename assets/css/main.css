@@ -1,0 +1,206 @@
+:root {
+    --primary: #2293C5;
+    --secondary: #22C56E;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/bg.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.9;
+}
+
+.container-fluid {
+    opacity: 1.0;
+}
+
+.form .radio-card input {
+    display: none;
+}
+
+label.plan {
+    position: relative;
+    color: #fff;
+    background-color: #aaa;
+    font-size: 26px;
+    min-height: 40px;
+    line-height: 30px;
+    display: block;
+    cursor: pointer;
+    border: 3px solid transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form .radio-card input:checked+ label.plan {
+    border: 3px solid #333;
+    background-color: var(--secondary);;
+}
+
+/* Progress Bar */
+fieldset:not(:first-of-type) {
+    display: none
+}
+
+fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+
+.action-button {
+    width: 100px;
+    background: var(--primary);;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px
+}
+
+.action-button:hover,
+.action-button:focus,
+label.plan:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px var(--primary);
+}
+
+.action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px
+}
+
+.action-button-previous:hover,
+.action-button-previous:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #616161
+}
+
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #000000
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 12px;
+    width: 25%;
+    float: left;
+    position: relative
+}
+
+#progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f109"
+}
+
+#progressbar #period:before {
+    font-family: FontAwesome;
+    content: "\f073 "
+}
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f007"
+}
+
+
+
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: var(--primary);
+}
+
+
+
+.fa-long-arrow-right {
+    float: right;
+    margin-top: 4px
+}
+
+.fa-long-arrow-left {
+    float: left;
+    margin-top: 4px
+}
+
+
+@media screen and (max-width:768px) {
+    .form .radio-card input {
+        display: none;
+    }
+
+    label.plan {
+        text-align: left;
+        min-height: 40px;
+        line-height: 30px;
+        display: block;
+    }
+
+    .form .radio-card input:checked + label.plan {
+        border: 3px solid #333;
+        background-color: var(--secondary);;
+    }
+}
+
+.btn-pay {
+ background-color: var(--secondary);
+}
