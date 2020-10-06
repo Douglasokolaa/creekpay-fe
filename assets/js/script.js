@@ -68,4 +68,11 @@ $(document).ready(function () {
         return false;
     })
 
+    //TODO
+    // $('input[name="name_of_your_radiobutton"]').change(() => {
+    //     let valueS = $('input[name="name_of_your_radiobutton"]:checked').val();
+    //     console.log(valueS);
+    //     // if (valueS == '')
+    //     $('#duration').text('days')
+    // })
 });
