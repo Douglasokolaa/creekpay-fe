@@ -90,13 +90,27 @@
                                         </label>
                                     </div>
                                 </section>
+                                <section class="pl-3 my-3">
+                                    <div class="form-group">
+                                        <label>How many <span id="duration">days</span> will you like to pay for</label>
+                                        <input type="number" name="duration" class="form-control" placeholder=""
+                                            value="1" step="1" min="1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="start_date">When would you like to start</label>
+                                        <input type="date" class="form-control" name="start_date" id="start_date"
+                                            aria-describedby="helpId" placeholder="">
+                                    </div>
+                                </section>
                                 <input type="button" name="previous"
                                     class="btn btn-sm btn-info float-left previous action-button-previous"
                                     value="Previous" />
                                 <input type="button" name="next"
                                     class="next btn btn-sm btn-primary float-right action-button" value="Next Step" />
                             </fieldset>
-                            <fieldset>
+                            <fieldset class="mb-3">
+                                <p class="text-center my-3 font-weight-bold">Let's Get to know you</p>
+
                                 <div class="form-group">
                                     <label for="Fullname">Your Name</label>
                                     <input type="email" class="form-control" id="Fullname" placeholder="Enter Fullname">
@@ -105,16 +119,18 @@
                                     <label for="enail">Email address</label>
                                     <input type="email" class="form-control" id="enail" placeholder="Enter email">
                                 </div>
-                                <label for=""> Gender: </label>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gender" id="maleRadio"
-                                        value="male">
-                                    <label class="form-check-label" for="maleRadio">Male</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gender" id="femaieRadio2"
-                                        value="female">
-                                    <label class="form-check-label" for="femaieRadio2">Female</label>
+                                <div class=" custom-checkbox">
+                                    <label class="pr-4"> Gender: </label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" id="maleRadio"
+                                            value="male">
+                                        <label class="form-check-label" for="maleRadio">Male</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" id="femaieRadio2"
+                                            value="female">
+                                        <label class="form-check-label" for="femaieRadio2">Female</label>
+                                    </div>
                                 </div>
                                 <input type="button" name="previous"
                                     class="btn btn-sm btn-info float-left previous action-button-previous"
@@ -128,7 +144,7 @@
 
                                     <div class="row card-body justify-content-center">
                                         <div class="col-7 text-center">
-                                            <h5>You Have Successfully Signed Up</h5>
+                                            <h5>TODO summary of selections</h5>
                                         </div>
                                     </div>
                                 </div>
